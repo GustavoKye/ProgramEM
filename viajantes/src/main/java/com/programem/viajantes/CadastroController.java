@@ -1,15 +1,16 @@
 package com.programem.viajantes;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 @Controller
 public class CadastroController {
     
 
-    @PostMapping("/cadastro")
+    @GetMapping("/cadastro")
         public String cadastro(){
-            return "cadastro";
+            return "Cadastro";
             
         }
     

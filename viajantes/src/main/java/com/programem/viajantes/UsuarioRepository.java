@@ -1,9 +1,8 @@
 package com.programem.viajantes;
 
+import org.springframework.data.repository.CrudRepository;
 
-
-public class UsuarioRepository extends CrudRepository <Usuario , String> {
+public interface UsuarioRepository extends CrudRepository<Usuario, String> {
     
     Usuario findByLogin(String login);
-    
 }
