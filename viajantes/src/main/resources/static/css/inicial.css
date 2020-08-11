@@ -1,0 +1,38 @@
+body {
+    background-image: url(../img/imagemDeFundo.png);
+    color: aliceblue;
+}
+.login > button{
+    background-color: #14B346;
+    text-decoration: none;
+    color: aliceblue;
+    width: 105px;
+    height: 37px;
+    border-radius: 30px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    text-decoration: none; color: inherit;
+    border-style: none;
+    outline: 0px;
+}
+.cadastro > button{
+    background-color: #B31454;
+    text-decoration: none;
+    color: aliceblue;
+    width: 105px;
+    height: 37px;
+    border-radius: 30px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    text-decoration: none; color: inherit;
+    border-style: none;
+    outline: 0px;
+}
+.descricao > h1{
+    color: aliceblue;
+}
+

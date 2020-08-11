@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/inicial.css}" rel="stylesheet">
     <title>Viajantes.com</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
@@ -14,20 +15,29 @@
     <div class="container">
     <div class="row">
     <div class="col-sm-12">
-    <div style="text-align: right;"><button><a href="Login.html">Login</a></button>
+    <div>
+        <div class="login">
+            <a href="/login"><button>Login</button></a>
+    </div>
     </div>
      </div>
     <div class="col-sm-12">
-    <div style="text-align: right;"><button><a href="Cadastro.html">Cadastro</a></button>
+    <div>
+        <div class="cadastro">
+        <button><a href="/cadastro">Cadastro</a></button>
+      
+    </div>
     </div>
      </div>
      </div>
     </div>
+    
 
 <div class="container">
-    <div class="descricao">
+   
      <div class="row">
         <div class="col">
+            <div class="descricao">
           <h1>A Viajantes.com é um espaço para entusiastas do mundo da tecnologia se informarem e trocarem experiências.Aqui você tem acesso a conteúdos de primeira que te tornarão um profissional do futuro.Venha embarcar nessa jornada por conhecimento!</h1>
       </div>
     </div>

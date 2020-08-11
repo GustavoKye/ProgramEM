@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/login.css}" rel="stylesheet">
     <title>Viajantes.com</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
     crossorigin="anonymous">
 
 </head>
   <body >
-    <form action="/usuario" method="post"> 
-      <label for="email">E-mail:</label>
-      <input type="text" id="email" name="email"><br><br>
-      <label for="senha">Senha:</label>
-      <input type="text" id="senha" name="senha"><br><br>
-      <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
-  </form>
-  <button><a href="/cadastro">Cadastro</a></button>
-  <button><a href="/inicial">Voltar</a></button>
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">  
+        <form action="/usuario" method="post"> 
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" id="senha" name="senha"><br><br>
+        <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
+    </form>
+    <button><a href="/cadastro">Cadastro</a></button>
+    <button><a href="/inicial">Voltar</a></button>
+    </div>
+      <div class="col-sm-4"></div>
+  </div>
+</div>
   
     
  

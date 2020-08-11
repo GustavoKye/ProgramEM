@@ -7,15 +7,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.GenericGenerator;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity /** indica que o Banco de Dados deve criar uma tabela para esse objeto */
 public class Usuario implements UserDetails {
     
-    @GeneratedValue(strategy = GenerationType.AUTO)
+   
     
-    @Id
+    @Id @GeneratedValue(generator="system-uuid")
+@GenericGenerator(name="system-uuid", strategy = "uuid")
+private String myId;
+
     private String login;
 
     private String nomeCompleto;

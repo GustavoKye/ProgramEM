@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="../static/Aulas.css">
-    <title>Aulas</title>
+    <link th:href="@{/css/aulas.css}" rel="stylesheet">
+    <title>Viajantes.com</title>
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0LB3FSfjvao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <button><a href="/cursos">Voltar</a></button>
-    <button><a href="./Cursopython.html">Próxima aula</a></button>
+    <div class="row">
+        <div class="col-sm-4"> 
+            <ul>
+            <li><a href="#"><i class="fas fa-home"></i><a href="/inicial">Página Inicial</a></li>
+            <li><a href="#"><i class="fas fa-home"></i><a href="/cursos">Cursos </a></li>
+            <li><a href="#"><i class="fas fa-home"></i><a href="/forum">Fórum</a></li>
+            
+            </ul>
+        </div>
+        <div class="col-sm-4"> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        <button><a href="/cursos">Voltar</a></button>
+        <button><a href="/cursos">Próxima aula</a></button></div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+   
+       
 </body>
 </html>
