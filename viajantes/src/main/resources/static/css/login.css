@@ -1,13 +1,14 @@
 body {
     background-image: url(../img/imagemDeFundo.png);
+    color: aliceblue;
 }
 
 .logo > img {
     width: 343px;
     height: 254px;
     text-align: center;
-}
 
+}
 .furm {
     color: white;
 }

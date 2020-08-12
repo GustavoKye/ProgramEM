@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class CadastroController {
     @PostMapping("/cadastro")
-     public String postCadastro(){
-        return "cadastro";
-     }
+        public String postCadastro(){
+            return "Cadastro";
+            
+        }
 
     @GetMapping("/cadastro")
         public String cadastro(){
