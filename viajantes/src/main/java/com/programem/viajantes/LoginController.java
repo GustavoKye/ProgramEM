@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class LoginController {
    
-    @PostMapping("/login")
-    public String loginspost(){
+    
+    @GetMapping("/")
+    public String principal(){
         return "principal";
     }
     @GetMapping("/login")
     public String login(){
-        return "login";
+        return "principal";
     }
-
 }
