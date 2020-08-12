@@ -3,23 +3,7 @@ body {
     color: aliceblue;
 }
 
-.login > button {
-    background-color: #14B346;
-    text-decoration: none;
-    color: aliceblue;
-    width: 105px;
-    height: 37px;
-    border-radius: 30px;
-    padding: 0px;
-    border: 0px;
-    outline: 0px;
-    cursor: pointer;
-    text-decoration: none; color: inherit;
-    border-style: none;
-    outline: 0px;
-}
-
-.voltar > button {
+.btn_btn-primary{
     background-color: #B31454;
     text-decoration: none;
     color: aliceblue;
@@ -33,7 +17,24 @@ body {
     text-decoration: none; color: inherit;
     border-style: none;
     outline: 0px;
-}
+} 
+.btn_btn-primary{
+    background-color: #B31454;
+    text-decoration: none;
+    color: aliceblue;
+    width: 105px;
+    height: 37px;
+    border-radius: 30px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    text-decoration: none; color: inherit;
+    border-style: none;
+    outline: 0px;
+} 
+
+
 .logo > img {
     width: 343px;
     height: 254px;

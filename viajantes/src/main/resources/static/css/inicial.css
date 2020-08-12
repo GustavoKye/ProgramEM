@@ -2,7 +2,7 @@ body {
     background-image: url(../img/imagemDeFundo.png);
     color: aliceblue;
 }
-.login > button{
+.btn_btn-primary{
     background-color: #14B346;
     text-decoration: none;
     color: aliceblue;
@@ -17,7 +17,7 @@ body {
     border-style: none;
     outline: 0px;
 }
-.cadastro > button{
+.btn_btn-primary{
     background-color: #B31454;
     text-decoration: none;
     color: aliceblue;
@@ -32,7 +32,7 @@ body {
     border-style: none;
     outline: 0px;
 } 
-.principal > button {
+.btn_btn-primary{
     background-color: #9314B3;
     text-decoration: none;
     color: aliceblue;
