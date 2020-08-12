@@ -1,118 +1,142 @@
 <DOCTYPE html>
     <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <title>Viajantes.com</title>
-    <link th:href="@{/css/cursos.css}" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" 
+      <link th:href="@{/css/cursos.css}" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" 
     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" 
-    crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    crossorigin="anonymous"> <!--Link do bootstrap-->
+
+      <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> <!--Importação de fontes-->
     </head>
+
     <body>
-    <div class="row">
-    <div class="wrapper">
-    <div class="sidebar">
-    <h2><Menu></h2>
-    <ul>
+      <div class="row">
+      <div class="wrapper">
+      <div class="sidebar">
+        <h2><Menu></h2>
+         <ul>
         <li><a href="#"><i class="fas fa-home"></i><a href="/inicial">Página Inicial</a></li>
         <li><a href="#"><i class="fas fa-home"></i><a href="/cursos">Cursos </a></li>
         <li><a href="#"><i class="fas fa-home"></i><a href="/forum">Fórum</a></li>
    
-    </ul>
-    <div class="main_content">
-    <div class="header"></div>
-    <div class="info"></div>
-    </div>
-    </div>
-</div>
-</div>
+        </ul>
+      <div class="main_content">
+      <div class="header"></div>
+      <div class="info"></div>
+      </div>
+      </div>
+      </div>
+      </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-            <div style="text-align: center;">
-                <br><br><br>
+      <div class="row">
+      <div class="col-sm-4"> <!--Primeira Coluna-->
+            
+          <br><br><br>
             Hard Skills
-        </div>
-    </div>
-        </div>
-        <div class="row"> <!--Nav bar hard skills-->
-            <div class="col">
-                <div style="text-align: center;">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HTML e CSS</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">JavaScript</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Python</a>
-                        </li>
-                      </ul>
-                      <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Faça esse curso de HTML e CSS e: <br>
-                          -Importe conteúdo externo na sua página HTML, como fontes, vídeos e mapas <br>
-                          -Conheça pseudo-classes e pseudo-elementos <br>
-                          -Use seletores de CSS avançados <br>
-                          -Saiba como lidar com opacidade e sombra <br>
-                          -Entenda sobre o Viewport e design responsivo <br> <button><a href="/cursohtml">Acessar aula</a></button></div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Faça esse curso de JavaScript e: <br>
-                          -Domine o paradigma de programação mais usado no mercado <br>
-                          -Entenda o que são referências e objetos <br>
-                          -Use atributos, métodos da instância e da classe <br>
-                          -Defina objetos através de construtores <br>
-                          -Aprenda sobre encapsulamento <br>  <button><a href="/cursojava">Acessar aula</a></button></div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Faça esse curso de Python e: <br>
-                          -Aprenda Python 2 na prática <br>
-                          -Aplique Orientação a objetos em seu código <br>
-                          -Veja como tratar exceções <br>
-                          -Lide com diferentes estruturas de dados <br>  <button><a href="/cursopython">Acessar aula</a></button> </div>
-                      </div>
-            </div>
-        </div>
+      </div>
+      </div>
+      </div>
+      <div class="row"> 
+      <div class="col-sm-4"> <!--Segunda Coluna-->
+      <div style="text-align: center;">
 
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist"> <!--Seleção de cursos hard skills-->
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">HTML e CSS</a>
+              </li>
 
-        </div>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">JavaScript</a>
+              </li>
 
-     =    <div class="container">
-        <div class="row">
-            <div class="col">
+              <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Python</a>
+              </li>
+
+              </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Faça esse curso de HTML e CSS e: <br>
+                -Importe conteúdo externo na sua página HTML, como fontes, vídeos e mapas <br>
+                -Conheça pseudo-classes e pseudo-elementos <br>
+                -Use seletores de CSS avançados <br>
+                -Saiba como lidar com opacidade e sombra <br>
+                -Entenda sobre o Viewport e design responsivo <br> <button><a href="/cursohtml">Acessar aula</a></button></div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Faça esse curso de JavaScript e: <br>
+                -Domine o paradigma de programação mais usado no mercado <br>
+                -Entenda o que são referências e objetos <br>
+                -Use atributos, métodos da instância e da classe <br>
+                -Defina objetos através de construtores <br>
+                -Aprenda sobre encapsulamento <br>  <button><a href="/cursojava">Acessar aula</a></button></div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Faça esse curso de Python e: <br>
+                -Aprenda Python 2 na prática <br>
+                -Aplique Orientação a objetos em seu código <br>
+                -Veja como tratar exceções <br>
+                -Lide com diferentes estruturas de dados <br>  <button><a href="/cursopython">Acessar aula</a></button> </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="col">
+      <div class="logo">
+                <img src="img/logo.verde.png"> <!--Logo-->
+      </div>
             <div style="text-align: center;">
                 <br><br><br>
             Soft Skills
-        </div>
-    </div>
-        </div>
-        <div class="row"> <!--Nav bar soft skills-->
-            <div class="col">
-                <div style="text-align: center;">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Resolução de Conflitos</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Gestão de tempo</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Autoconhecimento</a>
-                        </li>
-                      </ul>
-                      <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-                      </div>
-            </div>
-        </div>
+      </div>
+      </div>
+      </div>
+      <div class="row"> <!--Nav bar soft skills-->
+      <div class="col">
+      <div style="text-align: center;">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Resolução de Conflitos</a>
+            </li>
 
+            <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Gestão de tempo</a>
+            </li>
 
+            <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Autoconhecimento</a>
+            </li>
+
+            </ul>
+        <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              Faça este curso de Resolução de Conflitos e: <br>
+              - Aprenda a cosciliar Conflitos <br>
+              - Como dar Feedbacks construtivos <br>
+              - Como lidar com o inesperado. <br> <button><a href="/cursoresolucao">Acessar aula</a></button>
         </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> Faça este curso de Gestão de tempo e: <br>
+              - Aprenda a administrar melho seu tempo <br>
+              - Descubra métodos e ferramentas que vão te auxiliar muito <br>
+              -Saiba a importância de se organizar <br> <button><a href="/cursogestao">Acessar aula</a></button>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> Faça este curso de Autoconhecimento e: <br>
+              - Descubra o que é autoconhecimento <br>
+              -Saiba a importância de se autoconhecer <br>
+              - Aprenda formas de se desenvolver <br> <button><a href="/cursoautoconhecimento">Acessar aula</a></button>
+         </div>
+         </div>
+         </div>
+         </div>
+         </div>
+         </div>
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-    </html>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

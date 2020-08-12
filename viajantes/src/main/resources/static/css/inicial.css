@@ -31,8 +31,32 @@ body {
     text-decoration: none; color: inherit;
     border-style: none;
     outline: 0px;
+} 
+.principal > button {
+    background-color: #9314B3;
+    text-decoration: none;
+    color: aliceblue;
+    width: 167px;
+    height: 56px;
+    border-radius: 30px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    text-decoration: none; color: inherit;
+    border-style: none;
+    outline: 0px;
+
+
 }
 .descricao > h1{
     color: aliceblue;
 }
+
+    .logo > img {
+        width: 343px;
+        height: 254px;
+        text-align: center;
+
+    }
 
