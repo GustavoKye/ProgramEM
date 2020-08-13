@@ -2,8 +2,8 @@ body {
     background-image: url(../img/imagemDeFundo.png);
     color: aliceblue;
 }
-.btn_btn-primary{
-    background-color: #14B346;
+.botao > button{
+    background-color: #B31454;
     text-decoration: none;
     color: aliceblue;
     width: 105px;
@@ -52,24 +52,30 @@ body {
 .texto > p{
     color: aliceblue;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-family:cursive;
+    
     
     
 }
 .descricao {
-    background-color: #6A4EA6;
+    background-color: #774bd8;
     border-radius: 50px;
+    width:700px ;
+    height: 250px;
+    
     
 }
 
 .descricao > h1{
-    color: #72CA8E;
+    color: #58f78a;
     text-align: center;
     font-size: 25px;
+    font-family: cursive;
 }
 
     .logo > img {
-        text-align: end;
+        margin-left: 200px;
         width: 320px;
         height: 230px;
         

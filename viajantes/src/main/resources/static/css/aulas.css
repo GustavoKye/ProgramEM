@@ -1,6 +1,7 @@
 body {
     background-image: url(../img/imagemDeFundo.png);
     color: aliceblue;
+    padding-top: 150px
 }
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
@@ -109,4 +110,5 @@ body{
     display: none !important;
   }
 }
+
 
